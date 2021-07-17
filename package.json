@@ -10,7 +10,8 @@
     "format": "prettier --write src",
     "build:stats": "ng build --stats-json",
     "analyze": "webpack-bundle-analyzer dist/comm-project/stats.json",
-    "postinstall": "ng build --prod"
+    "postinstall": "ng build --prod",
+    "server": "json-server --watch db.json --port 5000"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +29,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "express": "^4.17.1",
+    "json-server": "^0.16.3",
     "prettier": "^2.3.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
