@@ -3,11 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "format": "prettier --write src"
+    "format": "prettier --write src",
+    "build:stats": "ng build --stats-json",
+    "analyze": "webpack-bundle-analyzer dist/comm-project/stats.json",
+    "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +27,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "express": "^4.17.1",
     "prettier": "^2.3.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",

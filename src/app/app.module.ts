@@ -9,13 +9,15 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
-  declarations: [AppComponent,
+  declarations: [
+    AppComponent,
     HeaderComponent,
     ButtonComponent,
     TasksComponent,
-    TaskItemComponent],
+    TaskItemComponent,
+  ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
